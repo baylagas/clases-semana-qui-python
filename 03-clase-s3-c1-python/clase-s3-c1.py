@@ -51,10 +51,49 @@
 # listaFrutas = mensaje.split("|")
 # print(listaFrutas[3])
 
-# revisar si existe una cadena en otra
-mensaje = "Este Es El Anio De Dragon"
-resultado = "Dragon" in mensaje
-if resultado:
-    print("yay")
+# # revisar si existe una cadena en otra
+# mensaje = "Este Es El Anio De Dragon"
+# resultado = "Dragon" in mensaje
+# if resultado:
+#     print("yay")
+# else:
+#     print("sad")
+
+# # revisar si no existe una cadena en otra
+# mensaje = "Este Es El Anio De Dragon"
+# resultado = "Dragon" not in mensaje
+# if resultado:
+#     print(mensaje.replace("Dragon", "Conejito"))
+# else:
+#     print(mensaje)
+
+# # concatenacion
+# a = "Hello"
+# b = "World"
+# c = a + " " + b
+# print(c)
+
+# # formateo
+# age = 36  # int
+# txt = "a My name is John, I am " + str(age)  # cadena
+# print(txt)
+# txt = "b My name is John, I am {}".format(age)
+# print(txt)
+# cost = 23.54
+# print(txt)
+# isTodayMonday = False
+# print(isTodayMonday)
+
+# boolean values - booleano
+number1 = 200
+number2 = 33
+
+result = number1 > number2
+print("result: {}".format(result))
+
+if result:
+    print("number1 is greater than number2")
 else:
-    print("sad")
+    print("number1 is not greater than number2")
+
+# mensaje distinto
