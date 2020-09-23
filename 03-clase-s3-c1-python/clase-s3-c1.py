@@ -51,10 +51,31 @@
 # listaFrutas = mensaje.split("|")
 # print(listaFrutas[3])
 
-# revisar si existe una cadena en otra
-mensaje = "Este Es El Anio De Dragon"
-resultado = "Dragon" in mensaje
-if resultado:
-    print("yay")
-else:
-    print("sad")
+# # revisar si existe una cadena en otra
+# mensaje = "Este Es El Anio De Dragon"
+# resultado = "Dragon" in mensaje
+# if resultado:
+#     print("yay")
+# else:
+#     print("sad")
+
+# # revisar si no existe una cadena en otra
+# mensaje = "Este Es El Anio De Dragon"
+# resultado = "Dragon" not in mensaje
+# if resultado:
+#     print(mensaje.replace("Dragon", "Conejito"))
+# else:
+#     print(mensaje)
+
+# # concatenacion
+# a = "Hello"
+# b = "World"
+# c = a + " " + b
+# print(c)
+
+# formateo
+age = 36  # int
+txt = "a My name is John, I am " + str(age)  # cadena
+print(txt)
+txt = "b My name is John, I am {}".format(age)
+print(txt)
