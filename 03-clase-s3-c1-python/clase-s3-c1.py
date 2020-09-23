@@ -53,7 +53,7 @@
 
 # revisar si existe una cadena en otra
 mensaje = "Este Es El Anio De Dragon"
-resultado = "Conejito" in mensaje
+resultado = "Dragon" in mensaje
 if resultado:
     print("yay")
 else:
