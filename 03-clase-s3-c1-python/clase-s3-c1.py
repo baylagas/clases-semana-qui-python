@@ -73,9 +73,25 @@
 # c = a + " " + b
 # print(c)
 
-# formateo
-age = 36  # int
-txt = "a My name is John, I am " + str(age)  # cadena
-print(txt)
-txt = "b My name is John, I am {}".format(age)
-print(txt)
+# # formateo
+# age = 36  # int
+# txt = "a My name is John, I am " + str(age)  # cadena
+# print(txt)
+# txt = "b My name is John, I am {}".format(age)
+# print(txt)
+# cost = 23.54
+# print(txt)
+# isTodayMonday = False
+# print(isTodayMonday)
+
+# boolean values - booleano
+number1 = 200
+number2 = 33
+
+result = number1 > number2
+print("result: {}".format(result))
+
+if result:
+    print("number1 is greater than number2")
+else:
+    print("number1 is not greater than number2")
