@@ -84,16 +84,34 @@
 # isTodayMonday = False
 # print(isTodayMonday)
 
-# boolean values - booleano
-number1 = 200
-number2 = 33
+# # boolean values - booleano
+# number1 = 200
+# number2 = 33
 
-result = number1 > number2
-print("result: {}".format(result))
+# result = number1 > number2
+# print("result: {}".format(result))
 
-if result:
-    print("number1 is greater than number2")
+# if result:
+#     print("number1 is greater than number2")
+# else:
+#     print("number1 is not greater than number2")
+
+# evaluando valores booleanos
+# cualquier valor que pongan
+x = "Hello"
+y = 15
+z = ["manzana"]
+
+print(bool(x))
+print(bool(y))
+print(bool(z))
+
+
+listaEstudiantes = ["balbino", "fatima", "diego"]
+# listaEstudiantes = []
+
+if listaEstudiantes:
+    for estudiante in listaEstudiantes:
+        print(estudiante)
 else:
-    print("number1 is not greater than number2")
-
-# mensaje distinto
+    print("on vacation")
