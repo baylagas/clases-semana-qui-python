@@ -71,3 +71,30 @@
 # print("eliminado")
 # print(key)
 # print(value)
+
+# la palabra reservada del elimina una variable completamente de la memoria
+
+# limpiar todo el diccionario el metodo clear()
+# personDic = {"name": "balbino", "age": 25, "salary": 400.0}
+# personDic.clear()
+# print(personDic)
+
+# personDic = {"name": "balbino", "age": 25, "salary": 250.0}
+# mycopy = personDic.copy()
+# print(mycopy)
+# mycopy2 = dict(personDic)
+# print(mycopy2)
+
+# business = {
+#     "programmer1": {"name": "balbino", "salary": 200.5},
+#     "programmer2": {"name": "diego", "salary": 300.5},
+# }
+
+# print(business.keys())
+
+# for worker in business:
+#     print(worker)
+#     print("    ", business[worker])
+
+# newDict = dict(name="rodrigo", age=23, salary=450.0, married=True)
+# print(newDict)
