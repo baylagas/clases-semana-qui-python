@@ -39,15 +39,46 @@ real, traducidos aun ambiente digital
 # mifuncion()
 
 # parametros en una funcion
-def saludarMundo(nombre, edad):
-    print("hola mundo")
-    print("mi nombre es " + nombre + " y mi edad es " + str(edad))
-    salario = float(input("salario: "))
-    print("y mi salario es de $" + str(salario))
+# def saludarMundo(nombre, edad):
+#     print("hola mundo")
+#     print("mi nombre es " + nombre + " y mi edad es " + str(edad))
+#     salario = float(input("salario: "))
+#     print("y mi salario es de $" + str(salario))
 
 
-# llamada de este nuevo metodo
-miNombre = "menganito"
-miEdad = int(input("edad: "))
-saludarMundo(miNombre, miEdad)
-print("thats all folks!")
+# # llamada de este nuevo metodo
+# miNombre = "menganito"
+# miEdad = int(input("edad: "))
+# saludarMundo(miNombre, miEdad)
+# print("thats all folks!")
+
+# argumentos arbitrarios *args
+# def listaEstudiantes(*estudiantes):
+#     print(type(estudiantes))
+#     print(estudiantes)
+#     for estudiante in estudiantes:
+#         print(estudiante)
+#     print("el tercer estudiante es " + estudiantes[2])
+
+
+# listaEstudiantes(
+#     "balbino", "patricio", "keavy", "isabel", "dante", "rodrigo", "andres", "patricia"
+# )
+
+# argumentos palabra reservada (keywords)
+def sumaTresNumeros(numero3, numero2, numero1):
+    print(numero1 + numero2 + numero3)
+
+
+def inputUsuario():
+    listaValores = {}
+    listaValores["num1"] = 5
+    listaValores["num2"] = 6
+    listaValores["num3"] = int(input("num3: "))
+    return listaValores
+
+
+listaValor = inputUsuario()
+sumaTresNumeros(
+    numero1=listaValor["num1"], numero2=listaValor["num2"], numero3=listaValor["num3"]
+)
