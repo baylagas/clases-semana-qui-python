@@ -66,19 +66,39 @@ real, traducidos aun ambiente digital
 # )
 
 # argumentos palabra reservada (keywords)
-def sumaTresNumeros(numero3, numero2, numero1):
-    print(numero1 + numero2 + numero3)
+# def sumaTresNumeros(numero3, numero2, numero1):
+#     print(numero1 + numero2 + numero3)
 
 
-def inputUsuario():
-    listaValores = {}
-    listaValores["num1"] = 5
-    listaValores["num2"] = 6
-    listaValores["num3"] = int(input("num3: "))
-    return listaValores
+# def inputUsuario():
+#     listaValores = {}
+#     listaValores["num1"] = 5
+#     listaValores["num2"] = 6
+#     listaValores["num3"] = int(input("num3: "))
+#     return listaValores
 
 
-listaValor = inputUsuario()
-sumaTresNumeros(
-    numero1=listaValor["num1"], numero2=listaValor["num2"], numero3=listaValor["num3"]
-)
+# listaValor = inputUsuario()
+# sumaTresNumeros(
+#     numero1=listaValor["num1"], numero2=listaValor["num2"], numero3=listaValor["num3"]
+# )
+
+# argumentos arbitrarios con keywords
+def desplegarDatos(**datos):
+    print(type(datos))
+    print(datos)
+    print(
+        "nombre: "
+        + datos["nombre"]
+        + " | apellido: "
+        + datos["apellido"]
+        + " | dui: "
+        + datos["dui"]
+        + " | edad: "
+        + str(datos["edad"])
+        + " | doble edad: "
+        + str(datos["edad"] * 2)
+    )
+
+
+desplegarDatos(nombre="balbino", apellido="aylagas", dui="45456767", edad=23)
