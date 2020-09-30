@@ -37,3 +37,17 @@ real, traducidos aun ambiente digital
 
 # # la llamada de una funcion
 # mifuncion()
+
+# parametros en una funcion
+def saludarMundo(nombre, edad):
+    print("hola mundo")
+    print("mi nombre es " + nombre + " y mi edad es " + str(edad))
+    salario = float(input("salario: "))
+    print("y mi salario es de $" + str(salario))
+
+
+# llamada de este nuevo metodo
+miNombre = "menganito"
+miEdad = int(input("edad: "))
+saludarMundo(miNombre, miEdad)
+print("thats all folks!")
