@@ -84,21 +84,46 @@ real, traducidos aun ambiente digital
 # )
 
 # argumentos arbitrarios con keywords
-def desplegarDatos(**datos):
-    print(type(datos))
-    print(datos)
-    print(
-        "nombre: "
-        + datos["nombre"]
-        + " | apellido: "
-        + datos["apellido"]
-        + " | dui: "
-        + datos["dui"]
-        + " | edad: "
-        + str(datos["edad"])
-        + " | doble edad: "
-        + str(datos["edad"] * 2)
-    )
+# def desplegarDatos(**datos):
+#     print(type(datos))
+#     print(datos)
+#     print(
+#         "nombre: "
+#         + datos["nombre"]
+#         + " | apellido: "
+#         + datos["apellido"]
+#         + " | dui: "
+#         + datos["dui"]
+#         + " | edad: "
+#         + str(datos["edad"])
+#         + " | doble edad: "
+#         + str(datos["edad"] * 2)
+#     )
 
 
-desplegarDatos(nombre="balbino", apellido="aylagas", dui="45456767", edad=23)
+# desplegarDatos(nombre="balbino", apellido="aylagas", dui="45456767", edad=23)
+
+# valor de parametro por defecto
+# def miPaisProcedencia(country="Noruega"):
+#     print("yo naci en " + country)
+
+
+# miPaisProcedencia("el salvador")
+# miPaisProcedencia("alemania")
+# miPaisProcedencia()
+# miPaisProcedencia("narnia")
+# print("hola", "que", "tal")
+# print("hola", "que", "tal", sep="*")
+
+# retornar valores
+# def suma(num1, num2):
+#     res = num1 + num2
+#     return res
+
+
+# resultado = suma(5, 6)
+# print(resultado)
+
+# pass statement
+def bienComplejoYFumado():
+    pass
