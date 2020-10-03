@@ -10,6 +10,8 @@ clases en base a sus propiedades y acciones
 """
 hay clases que solo tienen propiedades (variables)
     su proposito es solo guardar informacion
+
+ejercicio: coloquele el dui
 """
 
 
@@ -24,6 +26,7 @@ class Person:
 hay clases que solo tiene acciones (metodos)
     su proposito es solo procesar informacion, otras clases, clases trabajadoras
 
+ejercicio: coloquele un metodo createBoat() print creating boat
 """
 
 
@@ -42,6 +45,7 @@ class Factory:
 hay clases mas comunes que tienen ambos= guardan informacion y tienen metodos que procesan
     esa informacion
 
+ejercicio: agregarle number3, agregarlo a todos metodos y agregar un metodo mas que de el average
 """
 
 
