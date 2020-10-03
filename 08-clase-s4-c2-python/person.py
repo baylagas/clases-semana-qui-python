@@ -17,9 +17,10 @@ ejercicio: coloquele el dui
 
 class Person:
     # metodo constructor de la clase
-    def __init__(self, name, age):
+    def __init__(self, name, age, id):
         self.name = name
         self.age = age
+        self.id = id
 
 
 """
@@ -40,6 +41,9 @@ class Factory:
     def createAirplane(self):
         pass
 
+    def createBoat(self):
+        print("creating boat...")
+
 
 """
 hay clases mas comunes que tienen ambos= guardan informacion y tienen metodos que procesan
@@ -50,12 +54,17 @@ ejercicio: agregarle number3, agregarlo a todos metodos y agregar un metodo mas 
 
 
 class Operation:
-    def __init__(self, number1, number2):
+    def __init__(self, number1, number2, number3):
         self.number1 = number1
         self.number2 = number2
+        self.number3 = number3
 
     def add(self):
         return self.number1 + self.number2
 
     def multiply(self):
         return self.number1 * self.number2
+
+    def average(self):
+        total = self.number1 + self.number2 + self.number3
+        return total / 3.0
