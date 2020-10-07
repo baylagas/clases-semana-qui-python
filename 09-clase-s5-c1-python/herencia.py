@@ -6,16 +6,17 @@
 
 # Clase
 class Person:
-    def __init__(self, name, hairColor, haveTatoo):
+    def __init__(self, name, hairColor, haveTatoo, eyeColor):
         self.name = name
         self.hairColor = hairColor
         self.haveTatoo = haveTatoo
+        self.eyeColor = eyeColor
 
     def sendMessage(self, message):
         print(f"Person: {message}")
 
 
-person1 = Person("balbino", "black", False)
+person1 = Person("balbino", "black", False, "brown")
 
 # herencia en programacion
 # la herencia nos permite definir clases que herendan todos los metodos y propiedades
@@ -45,8 +46,8 @@ person1 = Person("balbino", "black", False)
 
 
 class Student(Person):
-    def __init__(self, name, hairColor, haveTatoo, learningInstitute):
-        super().__init__(name, hairColor, haveTatoo)
+    def __init__(self, name, hairColor, haveTatoo, eyeColor, learningInstitute):
+        super().__init__(name, hairColor, haveTatoo, eyeColor)
         self.learningInstitute = learningInstitute
 
     def singAnthem(self):
@@ -59,10 +60,11 @@ class Student(Person):
         super().sendMessage(message)
 
 
-student1 = Student("pepito", "celeste", True, "la escuelita")
+student1 = Student("pepito", "celeste", True, "blue", "la escuelita")
 print(student1.name)
 print(student1.hairColor)
 print(student1.haveTatoo)
+print(student1.eyeColor)
 print(student1.learningInstitute)
 student1.sendMessage("hola soy un estudiante")
 student1.sendMessagePerson("uhhhh este es otro mensaje")
