@@ -97,10 +97,10 @@ class MyNumbers:
             raise StopIteration
 
 
-myclass = MyNumbers(10, 100)
-iterador = iter(myclass)
+myclass = MyNumbers(6, 12)
+# iterador = iter(myclass)
 
-for number in iterador:
+for number in myclass:
     print(number)
 
 """
