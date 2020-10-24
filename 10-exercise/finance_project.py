@@ -25,7 +25,7 @@ class FinanceProject:
         self.calculateBalance()
 
     def calculateListTotal(self, transactionList):
-        result = 0
+        result = 0  # variable de metodo
         for item in transactionList:
             result += item.amount
         return result
